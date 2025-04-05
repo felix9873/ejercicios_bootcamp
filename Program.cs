@@ -1,4 +1,6 @@
 ﻿
+using System.Globalization;
+
 Console.WriteLine("encontrar el mayor numero");
 
 Console.WriteLine("ingresa 3 numeros");
@@ -24,12 +26,12 @@ if(num1 < num2)
     if(num2 < num3)
     {
         largestNumer = num3;
-        Console.WriteLine(largestNumer);
+        Console.WriteLine($" el mayor numero{largestNumer}");
     }
     else
     {
 
-        Console.WriteLine(largestNumer);
+        Console.WriteLine($" el mayor numero{largestNumer}");
     }
     
 }
@@ -38,12 +40,11 @@ else
     if(num1 > num3)
     {
         largestNumer = num1;
-        Console.WriteLine(largestNumer);
+        Console.WriteLine($" el mayor numero{largestNumer}");
     }
     else
     {
         largestNumer = num3;
-        Console.WriteLine(largestNumer);
+        Console.WriteLine($" el mayor numero{largestNumer}");
     }
 }
-
