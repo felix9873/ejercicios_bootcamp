@@ -61,10 +61,12 @@ switch(inputUser)
     case "cuadrado":
         Console.WriteLine("ingresa los lados del cuadrado");
 
-        string input = Console.ReadLine();
-        string input2 = Console.ReadLine();
+        float input = Convert.ToSingle( Console.ReadLine());
+        float input2 = Convert.ToSingle(Console.ReadLine());
 
+        float areaSquare = input * input2;
 
+        Console.WriteLine($"el area del cuadrado es {areaSquare}");
 
         break;
 
