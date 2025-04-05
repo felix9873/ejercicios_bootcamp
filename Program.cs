@@ -48,3 +48,55 @@ else
         Console.WriteLine($" el mayor numero{largestNumer}");
     }
 }
+
+
+Console.WriteLine("calcular el area ");
+
+
+
+string inputUser = Console.ReadLine();
+
+switch(inputUser)
+{
+    case "cuadrado":
+        Console.WriteLine("ingresa los lados del cuadrado");
+
+        string input = Console.ReadLine();
+        string input2 = Console.ReadLine();
+
+
+
+        break;
+
+    case "circulo":
+        Console.WriteLine("ingresa el radio del circulo");
+
+        float radius = Convert.ToSingle(Console.ReadLine());
+        
+        double area = Math.PI * (radius * radius);
+
+        Console.WriteLine($"el area del circulo es {area}");
+
+        break;
+
+    case "rectangulo":
+
+        Console.WriteLine("ingresa la base y la altura del rectangulo");
+
+        Console.Write("ingresa la base del rectangulo");
+
+        float baseRectangle = Convert.ToSingle(Console.ReadLine());
+
+        Console.WriteLine("ingresa la altura del rectangulo");
+
+        float height = Convert.ToSingle(Console.ReadLine());
+
+        float areaRectagle = baseRectangle * height;
+
+        Console.WriteLine($"el area del rectangulo {areaRectagle}");
+
+
+
+        break;
+        
+}
