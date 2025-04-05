@@ -1,5 +1,6 @@
 ﻿
 using System.Globalization;
+using System.Threading.Channels;
 
 Console.WriteLine("encontrar el mayor numero");
 
@@ -61,7 +62,11 @@ switch(inputUser)
     case "cuadrado":
         Console.WriteLine("ingresa los lados del cuadrado");
 
+        Console.Write("ingresa el primer lado");
         float input = Convert.ToSingle( Console.ReadLine());
+        Console.WriteLine();
+
+        Console.Write("ingresa el segundo lado");
         float input2 = Convert.ToSingle(Console.ReadLine());
 
         float areaSquare = input * input2;
