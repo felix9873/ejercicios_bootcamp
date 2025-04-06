@@ -112,62 +112,62 @@ switch(inputUser)
 
 int inicio = 1;
 
-while(inicio <= 5)
+while (inicio <= 5)
 {
-    
-    
+
+
     int b = 1;
     int checkB = 1;
     int row = 0;
-    int k = 1;
+    int p = 1;
 
     int d = 2;
 
     while (b <= 5)
     {
-       
-         
+        /*
+
         if (inicio == row && b > checkB)
         {
 
             Console.Write("* ");
 
         }
-        
- 
+
+
         else
         {
             Console.Write(b + " ");
-            
+
         }
+        */
+
+        Console.Write(b + " ");
 
 
-        
         row++;
-        
-      
+
+
         b++;
+    }
+
+    while (p <= b)
+    {
+        if (b > 1) Console.Write("* ");
+        
+
+
+        p++;
+       
+
     }
 
     
     Console.WriteLine();
 
-    while(k <= 5)
-    {
-        if(b == 1) Console.Write("7");
-
-        k++;
-    }
-
-    
     inicio++;
 
-    
 }
-
-Console.WriteLine();
-
-
 
 Console.Write("ingresa un numero: ");
 
@@ -189,7 +189,7 @@ for (int i = 1; i < value; i++)
     for (int j = 1; j < i; j++)
     {
         Console.Write(j + " ");
-        
+
 
     }
 
@@ -198,9 +198,6 @@ for (int i = 1; i < value; i++)
         if (i > 1) Console.Write("* ");
 
     }
-
-
-
 
     Console.WriteLine();
 }
@@ -218,7 +215,7 @@ while (start < valuePattern)
 
     while (secondValue < start)
     {
-        Console.Write(secondValue + " " );
+        Console.Write(secondValue + " ");
         secondValue++;
     }
     start++;
