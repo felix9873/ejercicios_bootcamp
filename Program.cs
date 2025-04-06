@@ -1,7 +1,5 @@
 ﻿
-using System.Globalization;
-using System.Threading.Channels;
-
+/*
 Console.WriteLine("encontrar el mayor numero");
 
 Console.WriteLine("ingresa 3 numeros");
@@ -106,4 +104,111 @@ switch(inputUser)
 
         break;
         
+}
+
+*/
+
+// imprimir cuadadro con patronde del 1 al 5
+
+int inicio = 1;
+
+while(inicio <= 5)
+{
+    
+    
+    int b = 1;
+    int checkB = 1;
+    int row = 0;
+    int k = 1;
+
+    int d = 2;
+
+    while (b <= 5)
+    {
+       
+         
+        if (inicio == row && b > checkB)
+        {
+
+            Console.Write("* ");
+
+        }
+        
+ 
+        else
+        {
+            Console.Write(b + " ");
+            
+        }
+
+
+        
+        row++;
+        
+      
+        b++;
+    }
+
+    
+    Console.WriteLine();
+
+    while(k <= 5)
+    {
+        if(b == 1) Console.Write("7");
+
+        k++;
+    }
+
+    
+    inicio++;
+
+    
+}
+
+Console.WriteLine();
+
+
+
+Console.Write("ingresa un numero: ");
+
+int multiplicationTable = Convert.ToInt32(Console.ReadLine());
+
+for (int i = 1; i <= multiplicationTable; i++)
+{
+    int result = multiplicationTable * i;
+
+    Console.WriteLine(result);
+}
+
+Console.WriteLine();
+
+int value = Convert.ToInt32(Console.ReadLine());
+
+for (int i = 1; i < value; i++)
+{
+    for (int j = 1; j < i; j++)
+    {
+        Console.Write(j + " ");
+    }
+
+    Console.WriteLine();
+}
+
+Console.WriteLine();
+
+int start = 1;
+int valuePattern = Convert.ToInt16(Console.ReadLine());
+
+while (start < valuePattern)
+{
+    Console.WriteLine();
+
+    int secondValue = 1;
+
+    while (secondValue < start)
+    {
+        Console.Write(secondValue + " " );
+        secondValue++;
+    }
+    start++;
 }
